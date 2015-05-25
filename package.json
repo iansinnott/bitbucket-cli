@@ -11,5 +11,9 @@
     "bitbucket"
   ],
   "author": "Ian Sinnott <ian@iansinnott.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "superagent": "^1.2.0"
+  }
 }
