@@ -1,0 +1,15 @@
+{
+  "name": "bitbucket-cli",
+  "version": "0.1.0",
+  "description": "CLI Interface to the BitBucket API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "bitbucket"
+  ],
+  "author": "Ian Sinnott <ian@iansinnott.com>",
+  "license": "MIT"
+}
