@@ -109,16 +109,20 @@ This script will never store your password and it only ever sends it to BitBucke
 
 ## Infrequently Asked Questions
 
-**Q:** Will this ever support OAuth instead of Basic Auth
+**Q:** _Will this ever support OAuth instead of Basic Auth_
+
 **A:** Maybe! I just wanted to get something up and running quickly and using Basic Auth was the best way to do that.
 
-**Q:** There are other CLIs out there, why build a new one?
+**Q:** _There are other CLIs out there, why build a new one?_
+
 **A:** Initially I didn't find one for Node.js.
 
-**Q:** Is this affiliated with BitBucket or Atlassian in any way?
+**Q:** _Is this affiliated with BitBucket or Atlassian in any way?_
+
 **A:** Nope. I'm pretty sure they would implement more than two commands if they rolled their own CLI. They also probably wouldn't host it on GitHub. :wink:
 
-**Q:** Why is this hosted on GitHub?
+**Q:** _Why is this hosted on GitHub?_
+
 **A:** Because GitHub already has an [outstanding CLI tool][hub] for making repositories on the fly.
 
 [hub]: https://hub.github.com/
