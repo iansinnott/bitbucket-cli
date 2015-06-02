@@ -1,10 +1,12 @@
 #!/usr/bin/env node --harmony
+
 'use strict';
 
 /* eslint-disable camelcase,no-process-exit */
 
 var app = require('commander');
 var req = require('superagent');
+var colors = require('colors');
 
 var config = require('./config.js');
 
@@ -52,17 +54,14 @@ req
   })
   .auth(config.username, config.password)
   .end(function(err, res) {
-    if (err || !res.ok) {
-      console.error('There was an error!!!', err.message);
-      return;
-    }
+    if (err || !res.ok)
+      return console.error('There was an error!!!', err.message);
 
-    console.log('To get started, add the remote and push any existing code:');
+    console.log(res.body.name.green, 'successfully created.', "\n");
+    console.log('To get started, add the remote and push any existing code:', "\n");
     console.log("\tgit remote add origin %s", buildRemoteURL(res.body));
-    console.log('\tgit push -u origin --all');
+    console.log('\tgit push -u origin --all', "\n");
   });
-
-if (app.public) console.log('you wanted to make this public');
 
 /*
 {
