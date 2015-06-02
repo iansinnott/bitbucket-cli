@@ -1,8 +1,11 @@
 #!/usr/bin/env node --harmony
+
+/* eslint-disable no-process-exit */
 'use strict';
 
 var app = require('commander');
 var request = require('superagent');
+require('colors');
 
 var config = require('./config.js');
 
@@ -25,11 +28,13 @@ request
       return;
     }
     res.body.forEach(function(repo, i) {
-      console.log('%s (%s/%s)', repo.name, repo.owner, repo.slug);
+      console.log("\t", repo.name.green, (' (' + repo.owner + '/' + repo.slug + ')').yellow);
     });
+
+    console.log("\n");
   });
 
-console.log('Listing all repositories');
+console.log('Listing all repositories', "\n");
 
 /*
 

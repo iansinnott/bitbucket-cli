@@ -1,4 +1,5 @@
 #!/usr/bin/env node --harmony
+
 var app = require('commander');
 
 var package = require('./package.json');

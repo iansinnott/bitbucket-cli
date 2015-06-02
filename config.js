@@ -1,3 +1,5 @@
+/* eslint-disable no-process-exit */
+
 var path = require('path');
 var _ = require('lodash');
 

@@ -6,7 +6,7 @@
 
 var app = require('commander');
 var req = require('superagent');
-var colors = require('colors');
+require('colors');
 
 var config = require('./config.js');
 
