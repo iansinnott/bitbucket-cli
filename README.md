@@ -88,8 +88,8 @@ module.exports = {
 #### Using environment variables:
 
 ```
-$ exports BITBUCKET_USERNAME=<username>
-$ exports BITBUCKET_PASSWORD=<password>
+$ export BITBUCKET_USERNAME=<username>
+$ export BITBUCKET_PASSWORD=<password>
 $ bb create some-repo
 ```
 
