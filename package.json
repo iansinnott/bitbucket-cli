@@ -13,7 +13,9 @@
   "author": "Ian Sinnott <ian@iansinnott.com>",
   "license": "MIT",
   "dependencies": {
+    "colors": "^1.1.0",
     "commander": "^2.8.1",
+    "lodash": "^3.9.3",
     "superagent": "^1.2.0"
   }
 }
