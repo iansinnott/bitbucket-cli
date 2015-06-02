@@ -1,6 +1,10 @@
 # BitBucket CLI (Node.js)
 
-This is a CLI for interacting with BitBucket
+This is a CLI for interacting with [BitBucket][bb].
+
+[bb]: https://bitbucket.org/
+
+Currently it only supports listing and creating repositories.
 
 ## Usage
 
@@ -102,3 +106,19 @@ With this approach, you will have to write our your username and password every 
 It's not a good idea to store plane-text passwords on your computer in case someone gained access to your hard drive. That being said, it really adds a lot of convenience, so just no the risks if you decide to store your password anywhere on your system in a human-readable form.
 
 This script will never store your password and it only ever sends it to BitBucket. If you're not convinced feel free to read the code. As of this writing its only a few hundred lines so it should be a really quick read :)
+
+## Infrequently Asked Questions
+
+**Q:** Will this ever support OAuth instead of Basic Auth
+**A:** Maybe! I just wanted to get something up and running quickly and using Basic Auth was the best way to do that.
+
+**Q:** There are other CLIs out there, why build a new one?
+**A:** Initially I didn't find one for Node.js.
+
+**Q:** Is this affiliated with BitBucket or Atlassian in any way?
+**A:** Nope. I'm pretty sure they would implement more than two commands if they rolled their own CLI. They also probably wouldn't host it on GitHub. :wink:
+
+**Q:** Why is this hosted on GitHub?
+**A:** Because GitHub already has an [outstanding CLI tool][hub] for making repositories on the fly.
+
+[hub]: https://hub.github.com/
