@@ -6,6 +6,7 @@
 
 var app = require('commander');
 var req = require('superagent');
+var path = require('path');
 require('colors');
 
 var config = require('./config.js');
@@ -39,9 +40,12 @@ var name = app.args[0];
 var description = app.description || '';
 var is_private = app.public ? false : true;
 
+// Use current directory name if no name provided
+if (!name) name = path.basename(process.cwd());
+
+// If somehow we still don't have a name, exit.
 if (!name) {
-  console.error('You must provide a repository name. Example:');
-  console.error("\n\t$ bb create my-repo\n");
+  console.error("Please provide a name for your repository.");
   process.exit(1);
 }
 
