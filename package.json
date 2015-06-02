@@ -1,6 +1,6 @@
 {
   "name": "bitbucket-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "CLI Interface to the BitBucket API",
   "main": "bb.js",
   "bin": {
